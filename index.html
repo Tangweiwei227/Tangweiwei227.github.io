@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e9e4d6">
+  <meta name="description" content="我是 Tevin，探索 AI、营销、数据与产品，把想法变成可上线的产品。欢迎来到我的个人桌面。">
+  <meta property="og:title" content="Tevin OS · 想法开始运行的地方">
+  <meta property="og:description" content="探索 Tevin 的产品、原型工坊与实践笔记。一个可以自由探索的温暖复古桌面。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pages.xiaotangtevin.top/">
+  <link rel="canonical" href="https://pages.xiaotangtevin.top/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/icons/regular/style.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tevin OS · 想法开始运行的地方</title>
+</head>
+<body>
+  <a class="skip-link" href="#desktop-apps">跳到桌面应用</a>
+  <header class="menubar">
+    <button class="os-brand" data-action="launcher" aria-haspopup="dialog" aria-expanded="false"><span class="brand-symbol" aria-hidden="true">t.</span><strong>Tevin OS</strong></button>
+    <nav aria-label="桌面菜单"><button data-open="welcome">欢迎</button><button data-open="about">关于</button><button data-open="settings">个性化</button></nav>
+    <div class="menubar-right"><span class="desktop-label">一个持续生长的个人空间</span><i class="ph ph-wifi-high" aria-hidden="true"></i><time id="clock"></time></div>
+  </header>
+  <main id="desktop" aria-label="Tevin OS 桌面">
+    <div class="wallpaper-art" aria-hidden="true"><div class="sun"></div><div class="hill hill-back"></div><div class="hill hill-front"></div><div class="wallpaper-word">make ideas<br><span>happen.</span></div></div>
+    <nav id="desktop-apps" class="desktop-apps" aria-label="桌面应用"></nav>
+    <aside class="desktop-note" aria-label="桌面便签"><span class="note-tape" aria-hidden="true"></span><div class="note-date">NOTE TO SELF</div><p>保持好奇，<br>让想法落地。</p><span class="note-sign">Tevin</span><i class="ph ph-sparkle" aria-hidden="true"></i></aside>
+    <div class="desktop-signature" aria-hidden="true">A little curiosity.<br>A lot of possibilities.</div>
+    <div id="windows"></div>
+  </main>
+  <footer class="taskbar" aria-label="任务栏">
+    <button class="start-button" data-action="launcher" aria-label="打开应用菜单" aria-haspopup="dialog" aria-expanded="false"><i class="ph ph-squares-four" aria-hidden="true"></i><span>开始探索</span></button>
+    <span class="taskbar-divider"></span><div id="tasks" class="tasks" aria-label="已打开的窗口"></div>
+    <button class="show-desktop" data-action="desktop" aria-label="显示桌面" title="显示桌面"><i class="ph ph-desktop" aria-hidden="true"></i></button>
+  </footer>
+  <section id="launcher" class="launcher" role="dialog" aria-label="应用菜单" hidden>
+    <div class="launcher-heading"><span><strong>你的下一站？</strong><small>在我的数字桌面里逛逛</small></span><button class="plain-icon" data-action="close-launcher" aria-label="关闭应用菜单"><i class="ph ph-x" aria-hidden="true"></i></button></div>
+    <label class="search-field"><i class="ph ph-magnifying-glass" aria-hidden="true"></i><input id="app-search" type="search" placeholder="搜索应用…" autocomplete="off" aria-label="搜索应用"><kbd>Esc</kbd></label>
+    <div id="launcher-apps"></div><div class="launcher-foot"><span class="brand-symbol" aria-hidden="true">t.</span><span>Tevin 的个人空间</span><kbd>⌘ / Ctrl K</kbd></div>
+  </section>
+  <div id="announcer" class="sr-only" aria-live="polite"></div>
+  <noscript><div class="noscript">此桌面需要 JavaScript。你仍可访问 <a href="https://build.xiaotangtevin.top">原型工坊</a>、<a href="https://blog.xiaotangtevin.top">实践笔记</a> 和 <a href="https://github.com/Tangweiwei227">GitHub</a>。</div></noscript>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
