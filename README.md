@@ -19,7 +19,7 @@ Node.js 18+：`npm run check` 检查脚本语法，`npm test` 验证窗口状态
 - GitHub Pages 从 `main` 分支根目录部署。`CNAME` 保持为 `pages.xiaotangtevin.top`。
 - 修改后推送到 `main` 会触发公开发布；本地改动不会自动上线。
 
-当前原型工坊、博客与 AI 投放工作台均处于建设阶段，小店尚未上线。未提供 AI 投放工作台访问链接，不显示购买、预约或其他不可用操作。
+当前原型工坊、博客与 AI 投放工作台均处于建设阶段。小店已上线，访问地址为 https://shop.tevin.me 。未提供 AI 投放工作台访问链接。
 
 ## 操作
 
